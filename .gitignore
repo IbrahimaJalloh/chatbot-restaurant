@@ -1,12 +1,18 @@
 # ========================================
 # 🔐 SECRETS CRITIQUES (TES règles → PARFAITES)
 # ========================================
-# Env master
+# Env secrets
 .env.master
-
-# Symlinks (Windows)
+.env
 *.lnk
-.env*
+
+# n8n data
+.n8n/
+.n8n/database*
+.n8n/*.log
+
+# Node
+node_modules/
 client.py
 server/.env
 agents/client.py
