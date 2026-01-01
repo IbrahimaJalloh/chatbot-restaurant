@@ -1,9 +1,82 @@
-﻿# Secrets CRITIQUES
+# ========================================
+# 🔐 SECRETS CRITIQUES (TES règles → PARFAITES)
+# ========================================
+# Env master
+.env.master
+
+# Symlinks (Windows)
+*.lnk
 .env*
 client.py
 server/.env
 agents/client.py
 
-# Python/Node/n8n
-__pycache__/ venv/ node_modules/ .n8n/ credentials/
-dist/ build/ logs/
+# ========================================
+# 🤖 N8N / NODE / PYTHON (compléments)
+# ========================================
+__pycache__/
+venv/
+node_modules/
+.n8n/
+credentials/
+dist/
+build/
+logs/
+
+# n8n spécifiques (CRITIQUES manquantes)
+*.key
+*.pem
+*.crt
+*.cer
+*.jks
+*.p12
+*.pfx
+*.keystore
+database.sqlite
+config.json
+
+# ========================================
+# 🐳 DOCKER / CONTAINERS
+# ========================================
+.dockerignore
+Dockerfile*.local
+docker-compose*.yml.local
+
+# ========================================
+# 💻 IDE / ÉDITORS
+# ========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ========================================
+# 📦 PACKAGES / CACHE
+# ========================================
+.pnp
+.pnp.js
+yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+# ========================================
+# ☁️ CLOUD / DEPLOYMENT
+# ========================================
+.nyc_output
+coverage/
+.nyc_output/
+.coverage/
+htmlcov/
+*.log
+.DS_Store
+Thumbs.db
+
+# ========================================
+# 🔒 SÉCURITÉ SUPPLÉMENTAIRE
+# ========================================
+!.env.example
+!.env.template
